@@ -31,7 +31,7 @@ run_test "system-info command" \
 
 # 3. Invalid command returns exit code 2
 run_test "invalid command" \
-    bash -c "$APP invalid-command >/dev/null 2>&1; [ \$? -eq 0 ]"
+    bash -c "$APP invalid-command >/dev/null 2>&1; [ \$? -eq 2 ]"
 
 # 4. Missing host
 run_test "check-host missing host" \
